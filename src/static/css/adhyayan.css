@@ -1,0 +1,4 @@
+.external {
+  color: blue; /* during this i had got an error because i wrote it as color: "blue" instead of color: blue so keep in mind not to repeat this silly mistake */
+  background-color: red; 
+}
