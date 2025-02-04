@@ -12,6 +12,13 @@ import ClassState from "./components/ClassState";
 import FunctionalProps from "./components/FunctionalProps";
 import ClassCounter from "./components/ClassCounter";
 import FunctionalCounter from "./components/FunctionalCounter";
+import { createContext } from "react";
+import A from "./components/A";
+import B from "./components/B";
+import C from "./components/C";
+
+
+export let contextObj = createContext();
 
 function App() {
   return (
@@ -33,6 +40,12 @@ function App() {
       <FunctionalProps name="Vinay" />
       <ClassCounter />
       <FunctionalCounter />
+      {/* here we have use useContext hook in which we showed that value is accessible in any level of components */}
+      <contextObj.Provider value="color : red">
+        <A />
+        <B />
+        <C />
+      </contextObj.Provider>
     </>
   );
 }
