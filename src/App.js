@@ -7,6 +7,7 @@ import Internal from "./components/Internal1";
 import External from "./components/External";
 import './static/css/adhyayan.css';
 import Images from "./components/Images";
+import State from "./components/State";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Internal />
       <External />
       <Images />
+      <State />
     </>
   );
 }
