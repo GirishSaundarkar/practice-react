@@ -9,6 +9,7 @@ import './static/css/adhyayan.css';
 import Images from "./components/Images";
 import State from "./components/State";
 import ClassState from "./components/ClassState";
+import FunctionalProps from "./components/FunctionalProps";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       {/* props -- they are used to pass data from parent to child components
       here props is color in ClassState component   */}
       <ClassState color="red" />
+      <FunctionalProps name="Vinay"/>
     </>
   );
 }
